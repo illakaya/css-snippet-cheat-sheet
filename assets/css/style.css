@@ -37,9 +37,10 @@ header p {
 
 .card {
     border: dashed var(--light) 0.1rem;
-    margin: 1rem 0;
+    margin: 1rem 0.3rem;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .card h2 {
@@ -81,7 +82,7 @@ footer {
 
 @media screen and (min-width: 768px) {
     .card {
-        flex-basis: 47%;
+        flex-basis: 48%;
     }
 }
 
