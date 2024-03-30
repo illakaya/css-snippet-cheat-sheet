@@ -2,11 +2,17 @@
     --dark: #333940;
     --light: #fff;
     --bright: #ea68ef;
+    --highlight: #4bcdb6;
 }
 
 * {
     padding: 0.5rem;
     font-family: sans-serif;
+}
+
+*::selection {
+    background: var(--highlight);
+    color: #000;
 }
 
 body {
@@ -38,7 +44,8 @@ header p {
 
 .card h2 {
     border: solid var(--light) 0.1rem;
-    margin: -1rem 0.5rem 0 0.5rem;
+    position: relative;
+    margin: -1.75rem 0.5rem 0 0.5rem;
     border-radius: 0.3rem;
     background-color: var(--dark);
 }
